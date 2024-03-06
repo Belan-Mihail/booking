@@ -1,14 +1,16 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
+import "./Home.css";
 import NavBar from "../../components/NavBar";
+import Header from "../../components/Header";
 
 
 const Home = () => {
   return (
-    <div className='m-4'>
-        <NavBar />
+    <div>
+      <NavBar />
+      <Header/>
     </div>
-  )
-}
+  );
+};
 
 export default Home
