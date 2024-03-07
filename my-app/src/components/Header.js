@@ -36,6 +36,9 @@ const Header = ({ type }) => {
     });
   };
 
+  // 28 and below to searcg button. also create navifate var (28) 
+  // 29 add destination state (12) and onchage (93)
+  // 30 list
   const handleSearch = () => {
     navigate("/hotels", { state: { destination, date, options } });
   };
@@ -45,6 +48,7 @@ const Header = ({ type }) => {
     <div className="header">
       <div
         className={
+          // classname according type in header component exist list
           type === "list" ? "headerContainer listMode" : "headerContainer"
         }
       >

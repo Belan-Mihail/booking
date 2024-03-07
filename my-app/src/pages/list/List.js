@@ -8,9 +8,21 @@ import { DateRange } from "react-date-range";
 import SearchItem from "../../components/searchItem/SearchItem";
 
 // 41:09
+// 18 rafce and add Navbar and header. add type list to header. 
+// 19 create features component and add it to home component (20 featured)
+// 27 create html for search menu
+// 28 add function handle search (header component) and add it as onclick funcrion to search button 
+// (go to header component)
+
+// 30 create const location (20) and base on location states 23-26
+// 31 add span 43-46 and placeholder with destination state to search form input (39). add styles
+
+//1:12:28
 
 const List = () => {
   const location = useLocation();
+  console.log(location)
+
   const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
   const [openDate, setOpenDate] = useState(false);
