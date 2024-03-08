@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
-import SearchItem from "../../components/searchItem/SearchItem";
+import SearchItem from "../../components/SearchItem";
 
 // 41:09
 // 18 rafce and add Navbar and header. add type list to header. 
@@ -16,6 +16,8 @@ import SearchItem from "../../components/searchItem/SearchItem";
 
 // 30 create const location (20) and base on location states 23-26
 // 31 add span 43-46 and placeholder with destination state to search form input (39). add styles
+// 32 add <Date range> 50-54 
+// 33 add opendate and setopendate state and add it to code 51 and 30 - сбой числе на несколько значений
 
 //1:12:28
 
@@ -118,3 +120,7 @@ const List = () => {
 };
 
 export default List;
+
+//34 create option div 54-102 and styles
+// 35 create searchitem component
+// 36 add 105-115 many searchitem components and go to searchitem
